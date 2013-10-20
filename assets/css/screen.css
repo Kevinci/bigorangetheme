@@ -432,8 +432,6 @@ table.plain {
 	-webkit-transform: rotate(-7deg);
 }
 
-
-
 .blog-description {
     margin: 0;
     font-size: 1.8rem;
@@ -457,24 +455,6 @@ table.plain {
 	hyphens: auto;
 }
 
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. 
-.post:after {
-    display: block;
-    content: "";
-    width: 7px;
-    height: 7px;
-    border: #E7EEF2 1px solid;
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    margin-left: -5px;
-    background: #fff;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    box-shadow: #fff 0 0 0 5px;
-}*/
 
 .post-title {
     margin:0;
@@ -513,6 +493,11 @@ table.plain {
 	line-height: 60px;
 	text-align: center;
 	font-weight: bold;
+}
+
+.post-meta:hover {
+	background-color: tomato;
+	color: white;
 }
 
 .post-meta a {
