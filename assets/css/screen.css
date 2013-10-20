@@ -91,7 +91,7 @@ body {
     font-family: 'Droid Serif', serif;
     font-size: 2.0rem;
     line-height: 1.6em;
-    color: #3A4145;
+    color: slategrey;
 }
 
 ::-moz-selection {
@@ -572,6 +572,23 @@ table.plain {
    ========================================================================== */
 
 /* Tweak the .post wrapper style */
+
+.post-ftr {
+	background-color: tomato;
+	color: white;
+	height: 18px;
+	line-height: 18px;
+	text-align: right;
+	padding-right: 20px;
+	margin-top: 17px;
+	border-radius: 10px;
+}
+
+.post-ftr p {
+		font-size: 1.2rem;
+		margin: 0;
+}
+
 .post-template .post {
     margin-top: 0;
     border-bottom: none;
@@ -683,12 +700,12 @@ table.plain {
 .older-posts,
 .newer-posts {
     position: absolute;
-    display: inline-block;
-    padding: 0 15px;
-    border: #EBF2F6 2px solid;
-    text-decoration: none;
-    border-radius: 30px;
-    transition: border ease 0.3s;
+	display: inline-block;
+	padding: 0 15px;
+	border: tomato 2px solid;
+	text-decoration: none;
+	border-radius: 10px;
+	transition: border ease 0.3s;
 }
 
 .older-posts {
@@ -706,7 +723,8 @@ table.plain {
 
 .older-posts:hover,
 .newer-posts:hover {
-    border-color: #9EABB3;
+    border-color: slategrey;
+	color:tomato;
 }
 
 
@@ -873,10 +891,6 @@ table.plain {
         padding: 40px 0;
     }
 	
-	.post-ftr p {
-		font-size: 1.2rem;
-		margin: 0;
-	}
 
     h1 {
         font-size: 4.8rem;

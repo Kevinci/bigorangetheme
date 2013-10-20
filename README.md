@@ -1,7 +1,5 @@
 # Big Orange
 
-The Big Orange Theme is based on the Caspar default theme
-
 ## Copyright & License
 
 Copyright (C) 2013 Kevin Imig - Released under the MIT License.

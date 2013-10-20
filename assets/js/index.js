@@ -7,8 +7,12 @@
     "use strict";
 
     $(document).ready(function(){
+	var offset = parseInt($('body').offset().top);
+	var bheight = $(window).height();
+	var percent = 1;
+	var hpercent = bheight * percent;
 	$("#drop-btn").click(function(){
-		$("html, body").animate({ scrollTop: 400 }, "slow");
+		$("html, body").animate({ scrollTop: hpercent }, "slow");
   return false;
 	});
 
