@@ -405,11 +405,16 @@ table.plain {
 
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 #blog-logo img {
-    display: block;
-    max-height: 100px;
-    width: auto;
-    margin: 0 auto;
-    line-height: 0;
+	display: block;
+	max-height: 51px;
+	width: auto;
+	margin: 0 auto;
+	line-height: 0;
+	border-radius: 50%;
+	position: absolute;
+	left: -28px;
+	top: 75px;
+	border: 2px solid tomato;
 }
 
 #back {
