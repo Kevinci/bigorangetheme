@@ -871,6 +871,7 @@ table.plain {
     .post {
         font-size: 0.9em;
         line-height: 1.6em;
+		width: 70%;
     }
 
     .post-template .post {
@@ -913,7 +914,7 @@ table.plain {
 	}
 	
     #blog-logo img {
-        max-height: 80px;
+        max-height: 51px;
     }
 
     .inner, 
@@ -924,11 +925,12 @@ table.plain {
     }
 
     .post {
-        width:auto;
-        margin-left: 16px;
-        margin-right: 16px;
-        font-size: 0.8em;
-        line-height: 1.6em;
+		width: 63%;
+		margin-left: 56px;
+		margin-right: 16px;
+		font-size: 0.8em;
+		line-height: 1.6em;
+		padding-left: 50px;
     }
 
     #site-head {
