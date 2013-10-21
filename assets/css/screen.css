@@ -476,10 +476,11 @@ table.plain {
 }
 
 .post-template .post-meta {
-	margin-top: 153px;
+	margin-top: 200px;
 }
 .post-template .post{
 	top: 3px;
+	padding-top: 77px;
 }
 .post-meta {
     display: inline-block;
@@ -583,6 +584,13 @@ table.plain {
     margin-top: 0;
     border-bottom: none;
     padding-bottom: 0;
+	padding-top:77px;
+}
+
+.post-template #blog-logo img {
+	max-height: 110px;
+	top: 13px;
+	left: -57px;
 }
 
 /* Kill that stylish little circle that was on the border, too */
@@ -678,12 +686,12 @@ table.plain {
     margin: 4rem auto;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.3rem;
-    color: #9EABB3;
+    color: #ffffff;
     text-align: center;
 }
 
 .pagination a {
-    color: #9EABB3;
+    color: #ffffff;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -696,6 +704,7 @@ table.plain {
 	text-decoration: none;
 	border-radius: 10px;
 	transition: border ease 0.3s;
+	background-color: tomato;
 }
 
 .older-posts {
@@ -714,7 +723,6 @@ table.plain {
 .older-posts:hover,
 .newer-posts:hover {
     border-color: slategrey;
-	color:tomato;
 }
 
 
@@ -735,12 +743,12 @@ table.plain {
 }
 
 .site-footer a {
-    color: #dddddd;
+    color: slategrey;
     text-decoration: none;
 }
 
 .site-footer a:hover {
-    color: #999999;
+    color: #f8f8f8;
 }
 
 .poweredby .icon-ghost {
@@ -959,10 +967,6 @@ table.plain {
 
     h4 {
         font-size: 2.3rem;
-    }
-
-    .post-template .post {
-        padding-bottom: 0;
     }
 
     .post-template .post-header {
