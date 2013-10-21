@@ -1,5 +1,5 @@
 # Big Orange
 
-This theme is based on Caspar default by ghost.
+Big Orange is based on Caspar Theme by ghost.
 
 ## Copyright & License
