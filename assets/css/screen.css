@@ -358,6 +358,13 @@ table.plain {
    ========================================================================== */
 
 /* Big cover image on the home page */
+.container {
+	border-left: 1px solid #f7f7f7;
+	width: 40%;
+	margin: 0 auto;
+	padding-top: 50px;
+}
+
 .lava-flow {
 	height: 3px;
 	background-color: tomato;
@@ -396,7 +403,6 @@ table.plain {
     display: table;
     width: 100%;
     height: 100%;
-    margin-bottom: 5rem;
     text-align: center;
     color: #fff;
     background: #6B7B85 no-repeat center center;
@@ -449,21 +455,26 @@ table.plain {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
     position: relative;
-	width: 80%;
+	width: 100%;
 	max-width: 700px;
 	margin: 0rem auto;
 	padding-bottom: 4rem;
 	word-break: break-word;
-	border-left: 2px solid #f7f7f7;
 	padding-left: 60px;
 	padding-bottom: 110px;
 	hyphens: auto;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
 }
 
 
-.post-title {
-    margin:0;
-}
+
+    .post-title {
+		margin: 0;
+		border-bottom: 1px solid #f7f7f7;
+		padding-bottom: 10px;
+	}
+
 
 .post-title a {
     text-decoration: none;
@@ -477,6 +488,7 @@ table.plain {
 
 .post-template .post-meta {
 	margin-top: 200px;
+	left: -37px;
 }
 .post-template .post{
 	top: 3px;
@@ -495,7 +507,7 @@ table.plain {
 	border: 3px solid tomato;
 	position: absolute;
 	top: -4px;
-	left: -34px;
+	left: -35px;
 	line-height: 60px;
 	text-align: center;
 	font-weight: bold;
@@ -590,7 +602,7 @@ table.plain {
 .post-template #blog-logo img {
 	max-height: 110px;
 	top: 13px;
-	left: -57px;
+	left: -61px;
 }
 
 /* Kill that stylish little circle that was on the border, too */
@@ -612,14 +624,16 @@ table.plain {
 
 /* The author credit area after the post */
 .post-footer {
-    position: relative;
-    margin: 4rem 0 0 0;
-    padding: 4rem 0 0 0;
-    border-top: #EBF2F6 1px solid;
+	position: relative;
+	margin: 0rem 0 0 0;
+	padding: 0 0 10rem 0;
+	border-top: #EBF2F6 1px solid;
 }
 
-.post-footer h4 {
-    font-size: 1.8rem;
+
+
+.post-footer .share h4 {
+    font-size: 1.3rem;
     margin: 0;
 }
 
@@ -640,7 +654,7 @@ table.plain {
    links remain at a fixed width the whole time */
 .post-footer .share {
     position: absolute;
-    top: 4rem;
+    top: 1rem;
     right: 0;
     width: 140px;
 }
@@ -681,13 +695,14 @@ table.plain {
 /* The main wrapper for our pagination links */
 .pagination {
     position: relative;
-    width: 80%;
-    max-width: 700px;
-    margin: 4rem auto;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.3rem;
-    color: #ffffff;
-    text-align: center;
+	width: 80%;
+	max-width: 700px;
+	margin: 0rem auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3rem;
+	color: #ffffff;
+	text-align: center;
+	top: -70px;
 }
 
 .pagination a {
@@ -732,7 +747,7 @@ table.plain {
 
 .site-footer {
     position: relative;
-	margin: 8rem 0 0 0;
+	margin: 0;
 	padding: 8rem 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
@@ -740,6 +755,12 @@ table.plain {
 	color: #ffffff;
 	text-align: center;
 	background: tomato;
+}
+
+.post-template .site-footer {
+	position: absolute;
+	width: 100%;
+	bottom:0;
 }
 
 .site-footer a {

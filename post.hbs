@@ -2,9 +2,11 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-
+<div class="lava-flow"></div>
+<div class="container">
 <main class="content" role="main">
-<div c	lass="lava-flow"></div>
+
+	
     <article class="{{post_class}}">
 		{{! Each post has the blog logo at the top, with a link back to the home page }}
         <header class="post-header">
@@ -24,11 +26,11 @@
         <span class="post-meta post-btn"><time datetime="{{date format="MM-DD"}}">{{date format='DD MMM'}}</time> {{#if tags}}on {{tags separator=" | "}}{{/if}}</span>
 
         <h1 class="post-title">{{{title}}}</h1>
-
+		
         <section class="post-content">
             {{content}}
         </section>
-
+		
         <footer class="post-footer">
 
             {{#if author}}
@@ -61,3 +63,4 @@
     </article>
 
 </main>
+</div>
