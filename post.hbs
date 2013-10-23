@@ -23,12 +23,13 @@
         {{#post}}
 
         {{! Everything below outputs content of the the post which has been published }}
-        <span class="post-meta post-btn"><time datetime="{{date format="MM-DD"}}">{{date format='DD MMM'}}</time> {{#if tags}}on {{tags separator=" | "}}{{/if}}</span>
+        <span class="post-meta post-btn"><time datetime="{{date format="MM-DD"}}">{{date format='DD MMM'}}</time></span>
 
         <h1 class="post-title">{{{title}}}</h1>
 		
         <section class="post-content">
             {{content}}
+			{{#if tags}}on {{tag.name}}{{/if}}
         </section>
 		
         <footer class="post-footer">

@@ -418,8 +418,8 @@ table.plain {
 	line-height: 0;
 	border-radius: 50%;
 	position: absolute;
-	left: -28px;
-	top: 75px;
+	right: -28px;
+	top: -27px;
 	border: 2px solid tomato;
 }
 
@@ -453,15 +453,18 @@ table.plain {
 }
 
 /* Every post, on every page, gets this style on its <article> tag */
+
 .post {
-    position: relative;
+	position: relative;
+	left: 40px;
+	padding: 20px;
 	width: 100%;
 	max-width: 700px;
 	margin: 0rem auto;
-	padding-bottom: 4rem;
 	word-break: break-word;
-	padding-left: 60px;
-	padding-bottom: 110px;
+	background-color: #f9f9f9;
+	margin-bottom: 70px;
+	border-radius: 15px;
 	hyphens: auto;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -469,10 +472,10 @@ table.plain {
 
 
 
+
     .post-title {
-		margin: 0;
+		margin-top: -10px;
 		border-bottom: 1px solid #f7f7f7;
-		padding-bottom: 10px;
 	}
 
 
@@ -487,9 +490,14 @@ table.plain {
 }
 
 .post-template .post-meta {
-	margin-top: 200px;
-	left: -37px;
+	cursor: pointer;
+	left: -87px;
 }
+
+.post-template .post-title {
+	margin-top: -60px;
+}
+
 .post-template .post{
 	top: 3px;
 	padding-top: 77px;
@@ -506,8 +514,8 @@ table.plain {
 	border-radius: 50%;
 	border: 3px solid tomato;
 	position: absolute;
-	top: -4px;
-	left: -35px;
+	top: 4px;
+	left: -85px;
 	line-height: 60px;
 	text-align: center;
 	font-weight: bold;
@@ -516,6 +524,17 @@ table.plain {
 .post-meta:hover {
 	background-color: tomato;
 	color: white;
+}
+
+.post:after {
+	content:'';
+	height: 20px;
+	width: 20px;
+	background-color: #f9f9f9;
+	position: absolute;
+	left: -10px;
+	-webkit-transform: rotate(45deg);
+	top: 27px;
 }
 
 .post-meta a {
@@ -576,6 +595,13 @@ table.plain {
 
 /* Tweak the .post wrapper style */
 
+.post-ftr .tags {
+	padding-left: 20px;
+	float: left;
+	font-size: 12px;
+}
+
+
 .post-ftr {
 	background-color: tomato;
 	color: white;
@@ -601,8 +627,8 @@ table.plain {
 
 .post-template #blog-logo img {
 	max-height: 110px;
-	top: 13px;
-	left: -61px;
+	top: -40px;
+	right: -45px;
 }
 
 /* Kill that stylish little circle that was on the border, too */
@@ -612,7 +638,7 @@ table.plain {
 
 /* Insert some mad padding up in the header for better spacing */
 .post-template .post-header {
-    padding: 60px 0;
+    padding: 0;
 }
 
 /* Keep large images within the bounds of the post-width */
@@ -695,14 +721,14 @@ table.plain {
 /* The main wrapper for our pagination links */
 .pagination {
     position: relative;
-	width: 80%;
+	width: 100%;
 	max-width: 700px;
-	margin: 0rem auto;
+	margin: 1rem auto;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.3rem;
 	color: #ffffff;
 	text-align: center;
-	top: -70px;
+	top: -28px;
 }
 
 .pagination a {
@@ -757,11 +783,7 @@ table.plain {
 	background: tomato;
 }
 
-.post-template .site-footer {
-	position: absolute;
-	width: 100%;
-	bottom:0;
-}
+
 
 .site-footer a {
     color: #444444;
@@ -938,6 +960,10 @@ table.plain {
 
 @media only screen and (max-width: 500px) {
 	
+	.container {
+		width: 80%;
+	}
+	
 	#drop-btn{
 		display:none;
 	}
@@ -945,7 +971,13 @@ table.plain {
     #blog-logo img {
         max-height: 51px;
     }
-
+	
+	
+	
+	.post-ftr {
+		display: none;
+	}
+	
     .inner, 
     .pagination {
         width: auto;
@@ -955,12 +987,12 @@ table.plain {
 
     .post {
 		width: 63%;
-		margin-left: 56px;
+		margin-left: 11px;
 		margin-right: 16px;
 		font-size: 0.8em;
 		line-height: 1.6em;
 		padding-left: 50px;
-    }
+	}
 
     #site-head {
 		min-height: 320px;
