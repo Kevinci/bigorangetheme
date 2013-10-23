@@ -19,8 +19,6 @@
 </header>
 
 {{! The main content area on the homepage }}
-
-<div class="container">
 <main class="content" role="main">
 	
     {{! Each post will be output using this markup }}
@@ -30,7 +28,7 @@
         <header class="post-header">
             <a href="{{url}}"><span class="post-meta"><time datetime="{{date format='MM-DD'}}">{{date format="DD MMM"}}</time></span></a>
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-			{{#if @blog.logo}}<a id="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+			{{#if @blog.logo}}<span id="blog-logo"><img src="{{@blog.logo}}" alt="Blog Logo" /></span>{{/if}}
 		</header>
         <section class="post-excerpt">
             <p>{{excerpt}}&hellip;</p>

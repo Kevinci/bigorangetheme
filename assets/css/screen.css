@@ -89,7 +89,7 @@ body {
     height: 100%;
     max-height: 100%;
     font-family: 'Droid Serif', serif;
-    font-size: 2.0rem;
+    font-size: 1.4rem;
     line-height: 1.6em;
     color: slategrey;
 }
@@ -358,11 +358,40 @@ table.plain {
    ========================================================================== */
 
 /* Big cover image on the home page */
-.container {
-	border-left: 1px solid #f7f7f7;
-	width: 40%;
-	margin: 0 auto;
-	padding-top: 50px;
+.content {
+	position: relative;
+	width: 765px;
+	margin: 60px auto;
+}
+
+.author h4 {
+	font-size: 1.4rem;
+	padding-top: 7px;
+}
+
+.content:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 63px;
+	width: 2px;
+	height: 100%;
+	background: rgba(0,0,0,0.05);
+	z-index: 1;
+}
+
+.content:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -9px;
+	bottom: 56px;
+	height: 20px;
+	width: 20px;
+	background: #DDD;
+	border-radius: 50%;
+	z-index: 10;
 }
 
 .lava-flow {
@@ -372,6 +401,7 @@ table.plain {
 	position: absolute;
 	top: 0;
 }
+
 
 #drop-btn{
 	width: 60px;
@@ -473,10 +503,10 @@ table.plain {
 
 
 
-    .post-title {
-		margin-top: -10px;
-		border-bottom: 1px solid #f7f7f7;
-	}
+.post-title {
+	margin-top: -10px;
+	border-bottom: 1px solid #f7f7f7;
+}
 
 
 .post-title a {
@@ -491,7 +521,7 @@ table.plain {
 
 .post-template .post-meta {
 	cursor: pointer;
-	left: -87px;
+	left: -85px;
 }
 
 .post-template .post-title {
@@ -519,6 +549,7 @@ table.plain {
 	line-height: 60px;
 	text-align: center;
 	font-weight: bold;
+	z-index: 999;
 }
 
 .post-meta:hover {
@@ -909,6 +940,10 @@ table.plain {
         padding: 15% 0;
     }
 
+	.container {
+        width: 70%;
+    }
+	
     .blog-title {
         font-size: 4rem;
         letter-spacing: -1px;
@@ -922,7 +957,7 @@ table.plain {
     .post {
         font-size: 0.9em;
         line-height: 1.6em;
-		width: 70%;
+		width: 100%;
     }
 
     .post-template .post {
