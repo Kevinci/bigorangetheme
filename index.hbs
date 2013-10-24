@@ -8,9 +8,7 @@
     <div class="lava-flow"></div>
 	<div class="vertical">
         <div id="site-head-content" class="inner">
-
-            
-            <h1 class="blog-title">{{@blog.title}}</h1>
+			<h1 class="blog-title">{{@blog.title}}</h1>
             <h2 class="blog-description">{{@blog.description}}</h2>
 			<div id="drop-btn">drop</div>
         </div>
@@ -28,10 +26,14 @@
         <header class="post-header">
             <a href="{{url}}"><span class="post-meta"><time datetime="{{date format='MM-DD'}}">{{date format="DD MMM"}}</time></span></a>
             <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-			{{#if @blog.logo}}<span id="blog-logo"><img src="{{@blog.logo}}" alt="Blog Logo" /></span>{{/if}}
+			{{#if author}}
+                <span id="blog-logo">
+                    <img src="{{author.image}}">
+                </span>
+            {{/if}}
 		</header>
         <section class="post-excerpt">
-            <p>{{excerpt}}&hellip;</p>
+            <p>{{excerpt}}&hellip;<a href="{{url}}">read more</a></p>
 			
         </section>
 		<section class="post-ftr">

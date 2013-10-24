@@ -442,7 +442,7 @@ table.plain {
 /* Yo-logo. Yolo-go. Upload one in ghost/settings/ */
 #blog-logo img {
 	display: block;
-	max-height: 51px;
+	max-height: 60px;
 	width: auto;
 	margin: 0 auto;
 	line-height: 0;
@@ -522,6 +522,8 @@ table.plain {
 .post-template .post-meta {
 	cursor: pointer;
 	left: -85px;
+	transition: inherit;
+	-webkit-transition: inherit;
 }
 
 .post-template .post-title {
@@ -550,6 +552,8 @@ table.plain {
 	text-align: center;
 	font-weight: bold;
 	z-index: 999;
+	transition: inherit;
+	-webkit-transition: inherit;
 }
 
 .post-meta:hover {
