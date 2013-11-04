@@ -402,7 +402,6 @@ table.plain {
 	top: 0;
 }
 
-
 #drop-btn{
 	width: 60px;
 	height: 60px;
@@ -448,10 +447,16 @@ table.plain {
 	line-height: 0;
 	border-radius: 50%;
 	position: absolute;
-	right: -28px;
-	top: -27px;
+	right: -20px;
+	top: -21px;
 	border: 2px solid tomato;
 }
+
+.post-template #blog-logo img {
+	max-height: 90px;
+	right: -61px;
+	top: -55px;
+	}
 
 #back {
     color: rgba(0,0,0,0.2);
@@ -464,7 +469,7 @@ table.plain {
 
 /* The details of your blog. Defined in ghost/settings/ */
 .blog-title {
-    margin: 10px 0 10px 0;
+    margin: 10px 0 60px 0;
 	font-size: 6rem;
 	letter-spacing: -1px;
 	color: tomato;
@@ -660,10 +665,11 @@ table.plain {
 	padding-top:77px;
 }
 
-.post-template #blog-logo img {
+.post-template .blog-logo-wrapper {
 	max-height: 110px;
-	top: -40px;
-	right: -45px;
+	top: 11px;
+	right: 20px;
+	position: absolute;
 }
 
 /* Kill that stylish little circle that was on the border, too */
