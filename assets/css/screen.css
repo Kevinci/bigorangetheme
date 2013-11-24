@@ -88,7 +88,7 @@ html {
 body {
     height: 100%;
     max-height: 100%;
-    font-family: 'Droid Serif', serif;
+    font-family: 'arial', serif;
     font-size: 1.4rem;
     line-height: 1.6em;
     color: slategrey;
@@ -500,6 +500,7 @@ table.plain {
 	background-color: #f9f9f9;
 	margin-bottom: 70px;
 	border-radius: 15px;
+	border: 1px solid #f1f1f1;
 	hyphens: auto;
 	-webkit-hyphens: auto;
 	-moz-hyphens: auto;
@@ -567,14 +568,17 @@ table.plain {
 }
 
 .post:after {
-	content:'';
+	content: '';
 	height: 20px;
 	width: 20px;
 	background-color: #f9f9f9;
 	position: absolute;
+	border-bottom: 1px solid #f1f1f1;
+	border-left: 1px solid #f1f1f1;
 	left: -10px;
 	-webkit-transform: rotate(45deg);
 	top: 27px;
+	z-index: 0;
 }
 
 .post-meta a {
