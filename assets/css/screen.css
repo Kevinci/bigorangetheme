@@ -954,7 +954,7 @@ table.plain {
         padding: 15% 0;
     }
 
-	.container {
+	.content {
         width: 70%;
     }
 	
@@ -1009,7 +1009,7 @@ table.plain {
 
 @media only screen and (max-width: 500px) {
 	
-	.container {
+	.content {
 		width: 80%;
 	}
 	
